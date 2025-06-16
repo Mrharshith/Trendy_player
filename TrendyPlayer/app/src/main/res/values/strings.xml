@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TrendyPlayer</string>
+    <string name="song_title">Song Title</string>
+    <string name="todo">TODO</string>
+    <string name="artist">Artist</string>
+    <string name="trending_songs">Trending Songs</string>
+</resources>

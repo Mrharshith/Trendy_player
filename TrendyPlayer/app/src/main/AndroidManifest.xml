@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/tp_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tp_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrendyPlayer"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ADD THESE LINES -->
+        <activity android:name=".LoginActivity" android:exported="false"/>
+        <activity android:name=".RegisterActivity" android:exported="false"/>
+        <activity android:name=".HomeActivity" android:exported="false"/>
+        <activity android:name=".TrendingSongsActivity" android:exported="false"/>
+        <activity android:name=".MusicPlayerActivity" android:exported="false"/>
+        <activity android:name=".PlaylistActivity" android:exported="false"/>
+        <activity android:name=".InDeviceSongsActivity" android:exported="false"/>
+        <activity android:name=".PlaylistSongsActivity" android:exported="false"/>
+
+
+    </application>
+</manifest>
